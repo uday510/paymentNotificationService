@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-
 const notificationSchema = new mongoose.Schema({
     subject: {
         type: String,
@@ -22,6 +21,10 @@ const notificationSchema = new mongoose.Schema({
         type: String,
         required: true,
         default: "UN_SENT" // SENT UN_SENT
+    },
+    requestor: {
+        type: String,
+        required: true
     },
     createdAt: {
         type: Date,

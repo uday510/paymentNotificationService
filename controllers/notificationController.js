@@ -14,7 +14,8 @@ exports.acceptNotificationRequest = async (req, res) => {
         subject: req.body.subject,
         recipientEmail: req.body.recipientEmail,
         paymentId: req.body.paymentId,
-        content: req.body.content
+        content: req.body.content,
+        requestor: req.body.requestor
     }
 
   /**
